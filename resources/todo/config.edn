@@ -6,7 +6,7 @@
    {[:get "/todos"] [:todo.handler.todos/list]}}
   
   ;; handlers
-  :todo.handler.todos/list {}
+  :todo.handler.todos/list {:db #ig/ref :duct.database/sql}
   }
 
  :duct.profile/dev   #duct/include "dev"
